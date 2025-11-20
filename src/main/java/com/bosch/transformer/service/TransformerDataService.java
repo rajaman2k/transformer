@@ -56,22 +56,22 @@ public class TransformerDataService {
             LocalDateTime.of(2025, 1, 16, 10, 30, 0), 
             65.5, 52.1, 45.0, 120.5, 118.3, 119.8));
         
-        data.add(new TransformerData(1, "Transformer_1", 
-            LocalDateTime.of(2025, 1, 16, 11, 0, 0), 
-            67.2, 53.8, 43.2, 122.1, 119.6, 121.3));
+        // data.add(new TransformerData(1, "Transformer_1", 
+        //     LocalDateTime.of(2025, 1, 16, 11, 0, 0), 
+        //     67.2, 53.8, 43.2, 122.1, 119.6, 121.3));
         
-        data.add(new TransformerData(1, "Transformer_1", 
-            LocalDateTime.of(2025, 1, 16, 11, 30, 0), 
-            69.8, 55.4, 41.8, 125.7, 123.2, 124.5));
+        // data.add(new TransformerData(1, "Transformer_1", 
+        //     LocalDateTime.of(2025, 1, 16, 11, 30, 0), 
+        //     69.8, 55.4, 41.8, 125.7, 123.2, 124.5));
 
         // Transformer 2 data
         data.add(new TransformerData(2, "Transformer_2", 
             LocalDateTime.of(2025, 1, 16, 10, 30, 0), 
             62.3, 48.7, 52.1, 115.8, 113.4, 114.9));
         
-        data.add(new TransformerData(2, "Transformer_2", 
-            LocalDateTime.of(2025, 1, 16, 11, 0, 0), 
-            64.1, 50.2, 50.8, 117.2, 115.1, 116.7));
+        // data.add(new TransformerData(2, "Transformer_2", 
+        //     LocalDateTime.of(2025, 1, 16, 11, 0, 0), 
+        //     64.1, 50.2, 50.8, 117.2, 115.1, 116.7));
 
         // Transformer 3 data
         data.add(new TransformerData(3, "Transformer_3", 
