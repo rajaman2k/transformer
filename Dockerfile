@@ -1,14 +1,18 @@
-FROM openjdk:17-jdk-slim
-
-# Install Maven
-RUN apt-get update && apt-get install -y maven
-
+# Use official Maven image to build the application
+FROM maven:3.8.6-openjdk-17 AS build
 WORKDIR /app
 COPY . .
-
-# Build the application
 RUN mvn clean package -DskipTests
 
-# Run the application
+# Use OpenJDK runtime
+FROM openjdk:17-slim
+WORKDIR /app
+
+# Copy the built JAR from the build stage
+COPY --from=build /app/target/*.jar app.jar
+
+# Expose port 8080
 EXPOSE 8080
-CMD ["java", "-jar", "target/*.jar"]
+
+# Run the application
+ENTRYPOINT ["java", "-jar", "app.jar"]
