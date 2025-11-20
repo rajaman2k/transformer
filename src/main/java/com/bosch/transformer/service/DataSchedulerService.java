@@ -20,7 +20,7 @@ public class DataSchedulerService {
     private DataPostingService dataPostingService;
     
     // Run every minute (60,000 milliseconds) - sends only ONE object
-    @Scheduled(fixedRate = 15000)
+    @Scheduled(fixedRate = 60000)
     public void scheduleSingleDataPosting() {
         logger.info("🕒 Scheduled task started - Generating and posting single transformer data");
         
